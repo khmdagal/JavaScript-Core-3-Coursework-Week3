@@ -10,12 +10,12 @@ let order = [
 const [...orderList] = order;
 
 // This will be the title of each column
-console.log(`QTY\tITEM\tTOTAL`);
+console.log(`QTY \t ITEM \t TOTAL`);
 const totalBill = orderList.map(element => {
  
   // this will print out each item quantity and total price based on the quanty for this particular item
   console.log(
-    `${element.quantity}\t${element.itemName}\t\t${Number(
+    `${element.quantity} \t ${element.itemName} \t\t ${Number(
       element.unitPrice * element.quantity
     ).toFixed(2)}`
   );
